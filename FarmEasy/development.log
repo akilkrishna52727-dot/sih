@@ -1,0 +1,14 @@
+=====================================
+Your laptop IP: 10.3.16.197
+Use this in Flutter: http:///api
+Write-Host : Cannot bind parameter 'ForegroundColor'. Cannot convert value "Cyan10.3.16.197" to type "System.ConsoleColor". 
+Error: "Unable to match the identifier name Cyan10.3.16.197 to a valid enumerator name. Specify one of the following 
+enumerator names and try again:
+Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, 
+Yellow, White"
+At D:\newapp1\FarmEasy\get_laptop_ip.ps1:39 char:69
++ ... ===================================" -ForegroundColor Cyan$ip = (Get- ...
++                                                           ~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Write-Host], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.WriteHostCommand
+ 

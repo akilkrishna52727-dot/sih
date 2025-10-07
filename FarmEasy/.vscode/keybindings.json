@@ -1,0 +1,17 @@
+[
+  {
+    "key": "ctrl+f5",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Start Flask External"
+  },
+  {
+    "key": "ctrl+shift+f5",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Connect Android Device"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Get Laptop IP"
+  }
+]

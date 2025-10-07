@@ -1,0 +1,53 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.231.160:5000
+Press CTRL+C to quit
+127.0.0.1 - - [15/Sep/2025 09:36:39] "GET /api/health HTTP/1.1" 200 -
+10.9.231.160 - - [15/Sep/2025 09:37:48] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 09:51:20] "GET /api/auth/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:01:00] "POST /api/auth/register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2025 10:01:02] "GET /api/weather/current?lat=12.8244992&lon=80.0459207 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:01:02] "GET /api/weather/current/risks?lat=12.8244992&lon=80.0459207 HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 10:01:03] "GET /api/crops/all HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:01:10] "GET /api/weather/current?lat=12.8249094&lon=80.0456754 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:01:10] "GET /api/weather/current/risks?lat=12.8249094&lon=80.0456754 HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 10:01:10] "GET /api/crops/all HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:06:11] "POST /api/auth/register HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2025 10:14:35] "POST /api/auth/register HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2025 10:14:44] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:14:46] "GET /api/weather/current?lat=12.8249292&lon=80.0456929 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:14:46] "GET /api/weather/current/risks?lat=12.8249292&lon=80.0456929 HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 10:14:46] "GET /api/crops/all HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:15:00] "POST /api/virtual-farm/create HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2025 10:37:18] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 10:37:18] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:44] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:44] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:45] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:45] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:47] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:47] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:52] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:52] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:53] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:53] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:55] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:55] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:02:57] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:02:57] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 12:03:28] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 12:03:28] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 13:57:52] "GET /api/auth/verify HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 13:57:57] "GET /api/weather/current?lat=12.824516&lon=80.045897 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 13:57:57] "GET /api/weather/current/risks?lat=12.824516&lon=80.045897 HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 13:57:57] "GET /api/crops/all HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:10:50] "GET /api/auth/verify HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:10:55] "GET /api/weather/current?lat=12.8244974&lon=80.0459186 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:10:55] "GET /api/weather/current/risks?lat=12.8244974&lon=80.0459186 HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 14:10:55] "GET /api/crops/all HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:38:58] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:38:58] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 14:39:08] "GET /api/weather/current?city=G\u016bduv\u0101ncheri HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2025 14:39:08] "GET /api/weather/current/risks?city=G\u016bduv\u0101ncheri HTTP/1.1" 404 -
+127.0.0.1 - - [15/Sep/2025 15:53:24] "POST /api/virtual-farm/create HTTP/1.1" 201 -

@@ -1,0 +1,58 @@
+{
+  // VS Code Tasks for FarmEasy
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Get Laptop IP",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-ExecutionPolicy", "Bypass", "-File", "get_laptop_ip.ps1"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Connect Android Device",
+      "type": "shell",
+      "command": "connect_android_device.bat",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Flask External",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/c", "cd backend_flask && venv\\Scripts\\activate && python run.py --host=0.0.0.0"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Flutter Integration Test",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "test",
+        "integration_test/farmeasy_e2e_test.dart"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/frontend_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Flutter APK",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["build", "apk", "--release"],
+      "options": {
+        "cwd": "${workspaceFolder}/frontend_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean & Run FarmEasy",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build_windows.bat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

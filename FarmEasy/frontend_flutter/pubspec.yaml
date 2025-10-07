@@ -1,0 +1,67 @@
+name: farmeasy
+description: Smart farming assistant app
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Core
+  http: ^1.1.0
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  geolocator: ^10.1.0
+  flutter_local_notifications: ^19.4.1
+  file_picker: ^8.0.0
+  path_provider: ^2.1.2
+  intl: ^0.20.2
+  share_plus: ^7.2.1
+  fl_chart: ^1.1.0
+
+  # UI & Animation
+  avatar_glow: ^2.0.2
+  cached_network_image: ^3.3.0
+  percent_indicator: ^4.2.3
+
+  # Camera & Image
+  camera: ^0.10.5+9
+  image_picker: ^1.0.7
+  image: ^4.1.7
+
+  # Voice & Speech
+  speech_to_text: ^7.3.0
+  flutter_tts: ^4.2.3
+
+  # AI & ML
+  # Using ^0.11.0 to resolve prior build issue with UnmodifiableUint8ListView
+  tflite_flutter: ^0.11.0
+
+  # Permissions & Device
+  permission_handler: ^12.0.1
+  device_info_plus: ^9.1.2
+
+  # Networking utils
+  dio: ^5.3.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    # AI Disease Detection assets
+    - assets/models/
+    - assets/disease_images/
+    - assets/treatment_guides/
+    - assets/l10n/
